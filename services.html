@@ -12,7 +12,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-     
+     .card{
+        position:relative;
+        overflow: hidden;
+        transition: 0.2s all;
+        /* background-color: black; */
+        }
+       .card-text{
+       position: absolute;
+        bottom: 0;
+        left: 0px;
+        right: 0;
+        background-color:transparent;
+        overflow: hidden;
+        width: 100%;
+        height:0%;
+        transition: .3s ease-in;
+       
+       
+        }
+        .card:hover .card-text{
+        background-color:transparent;
+       
+        height:100%;
+        }
+       
+        .para1{
+       
+        color:azure;
+        font-size: 20px;
+        position: absolute;
+        box-sizing: border-box;
+        box-shadow: 5px 5px 5px #000;
+        top: 50%;
+        left: 50%;
+       transform: translate(-50%, -50%);
+        text-align: center;
+       
+        }
     </style>
   </head>
   <body>
@@ -50,10 +87,11 @@
           <a class="nav-link text-white" href="services.html">services</a>
         </li>
         <li class="nav-item ml-auto">
-          <a class="nav-link text-white" href="">Contact</a>
+          <a class="nav-link text-white" href="Contact.html">Contact</a>
         </li>
-        <button class="btn btn-danger ml-3" style="padding:7px;border-radius:25px;font-style:italic;">BOOK NOW
-          </button>
+        <li class="nav-item ml-auto">
+          <a  class="btn btn-danger ml-3" href="book.html" style="padding:7px;border-radius:25px;font-style:italic;">BOOK NOW
+          </a></li>
       </div>
     </div>
   </div>
@@ -72,8 +110,12 @@
         <div class="card m-2 rounded">
           <img src="https://i.pinimg.com/originals/f3/69/7a/f3697a4b1b174a17c706f27a8cf4c810.jpg" alt="">
           <div class="card-body py-0">
-<h4>Rastaurant & Bar</h4>
-<p class="text-warning">food & Drinks</p>
+            <div class="card-text">
+              <p class="para1">Rastaurant & Bar. All food & Drink items.
+              </p>
+              </div>
+<!-- <h4>Rastaurant & Bar</h4>
+<p class="text-warning">food & Drinks</p> -->
           </div>
         </div>
       </div>
@@ -81,8 +123,11 @@
         <div class="card m-2 rounded">
           <img src="https://lh3.googleusercontent.com/s9K8J9P1BteuPXzU73lq2GqOXtkFzvHA6h1lvlTeRNy28dUogKE1mp_G5UnKNsWLKEB-nOgP4A=w1080-h608-p-no-v0" alt="" height="220px">
           <div class="card-body py-0">
-            <h4>Spa & Wellness</h4>
-            <p class="text-warning">Comfort & Relax</p>
+            <!-- <h4>Spa & Wellness</h4>
+            <p class="text-warning">Comfort & Relax</p> -->
+            <div class="card-text">
+              <p class="para1"> Spa & Wellness for comfort and Relax</p>
+              </div>
           </div>
         </div>
       </div>
@@ -90,8 +135,11 @@
       <div class="card m-2 rounded">
        <img src="https://iias.org.in/blog/wp-content/uploads/2019/09/ALI-SIR-BLOG-1-450x300.jpg" alt="">
        <div class="card-body py-0">
-         <h4>Staff 24x7</h4>
-         <p class="text-warning">support & Secure</p>   
+         <!-- <h4>Staff 24x7</h4>
+         <p class="text-warning">support & Secure</p>    -->
+         <div class="card-text">
+          <p class="para1">staff service 24x7</p>
+          </div>
       </div>
       </div>
       </div>
@@ -101,8 +149,11 @@
         <div class="card m-2 rounded">
           <img src="https://autopro8.mediacdn.vn/2018/4/12/e-class-se-la-diem-cong-hai-long-ben-canh-cac-dich-vu-cao-cap-khac-cua-khach-san-ma-du-khach-danh-cho-intercontinental-hanoi-westlake-1523509322578562162825.jpg" alt="" height="220px">
           <div class="card-body py-0">
-            <h4>Transportation</h4>
-            <p class="text-warning">Taxi service</p>
+            <!-- <h4>Transportation</h4>
+            <p class="text-warning">Taxi service</p> -->
+            <div class="card-text">
+              <p class="para1">Transportation by courtasy coaches</p>
+              </div>
           </div>
         </div>
       </div>
@@ -110,8 +161,11 @@
         <div class="card m-2 rounded">
           <img src="https://www.businesswest.co.uk/sites/default/files/styles/event_image/public/blog/featured/currency-notes.png?itok=TOPEnWGg" alt="" height="220px">
           <div class="card-body py-0">
-       <h4>Foreign Exchange</h4>
-       <p class="text-warning">Currency</p>     
+       <!-- <h4>Foreign Exchange</h4>
+       <p class="text-warning">Currency</p>      -->
+       <div class="card-text">
+        <p class="para1">Exchange foreign currency</p>
+        </div>
           </div>
         </div>
       </div>
@@ -119,8 +173,11 @@
         <div class="card m-2 rounded">
           <img src="https://images.news18.com/ibnlive/uploads/2021/01/1609844241_6-article-feature-image.jpg?impolicy=website&width=534&height=356" alt="">
           <div class="card-body py-0">
-            <h4 style="color:">Doctor on call</h4>
-            <p class="text-warning">Emergency</p>
+            <!-- <h4 style="color:">Doctor on call</h4>
+            <p class="text-warning">Emergency</p> -->
+            <div class="card-text">
+              <p class="para1">Doctor on call premium personalized care is available 24x7</p>
+              </div>
           </div>
         </div>
       </div>
